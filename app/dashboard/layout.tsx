@@ -104,7 +104,7 @@ function Layout({ children }: { children: React.ReactNode }) {
             </Button>
             <AvatarCard />
             <div className="grid w-fit">
-              <span>username</span>
+              <span className="font-semibold">Company Account</span>
               <span className="flex space-x-2 items-center">₹ 0.00 INR</span>
             </div>
           </div>
