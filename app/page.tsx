@@ -31,7 +31,7 @@ export default function Home() {
     }
   };
   return (
-    <main className="min-h-screen flex justify-center items-center p-24 bg-stone-100">
+    <main className="min-h-screen flex justify-center items-center p-4 md:p-24 bg-stone-100">
       <section className="w-full md:max-w-sm mx-auto text-center border-2 shadow-xl rounded-xl p-10 flex flex-col justify-center space-y-5 bg-white">
         <Logo className="mx-auto" width={200} height={200} />
         <h1 className="font-bold text-2xl">Welcome Back</h1>
