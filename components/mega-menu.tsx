@@ -75,8 +75,7 @@ export function NavigationMenuDemo() {
                         project
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        Beautifully designed components built with Radix UI and
-                        Tailwind CSS.
+                        Find projects relivant to your skills and interests.
                       </p>
                     </a>
                   </NavigationMenuLink>
