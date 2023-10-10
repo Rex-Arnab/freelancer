@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import axios from "axios";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 
 const TodoItem = ({
@@ -97,6 +98,9 @@ function Admin() {
 
   return (
     <div className="min-h-screen bg-slate-200">
+      <Head>
+        <title>Admin Panel</title>
+      </Head>
       <nav className="bg-primary p-5 text-white font-bold flex items-center justify-between">
         <h1>ADMIN PANEL</h1>
         <div>
