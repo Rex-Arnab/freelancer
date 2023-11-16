@@ -20,7 +20,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleLogin = () => {
-    if (email === "admin" && password === "admin") {
+    if (email === "hp502156@gmail.com" && password === "FreeLan333.") {
       router.push("/dashboard");
     } else {
       toast({
