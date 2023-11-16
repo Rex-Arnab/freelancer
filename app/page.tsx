@@ -95,18 +95,20 @@ export default function Home() {
         </p>
 
         <div className="flex items-center justify-between">
-          <Image
-            src="https://www.f-cdn.com/assets/main/en/assets/login-signup/app-store-badges/apple-app-store-badge.png"
-            alt="App Store"
-            width={140}
-            height={50}
-          />
-          <Image
-            src="https://www.f-cdn.com/assets/main/en/assets/login-signup/app-store-badges/google-play-store-badge.png"
-            alt="Play Store"
-            width={150}
-            height={50}
-          />
+          <div className="relative w-full max-w-[150px] h-[50px]">
+            <Image
+              src="https://www.f-cdn.com/assets/main/en/assets/login-signup/app-store-badges/apple-app-store-badge.png"
+              alt="App Store"
+              fill
+            />
+          </div>
+          <div className="relative w-full max-w-[150px] h-[50px]">
+            <Image
+              src="https://www.f-cdn.com/assets/main/en/assets/login-signup/app-store-badges/google-play-store-badge.png"
+              alt="Play Store"
+              fill
+            />
+          </div>
         </div>
       </section>
     </main>
