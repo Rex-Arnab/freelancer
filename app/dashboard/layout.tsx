@@ -2,8 +2,10 @@
 
 import AvatarCard from "@/components/Avatar";
 import Logo from "@/components/Logo";
+import MessageCard from "@/components/MessageCard";
 import { NavigationMenuDemo } from "@/components/mega-menu";
 import { Button } from "@/components/ui/button";
+
 import { Separator } from "@/components/ui/separator";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
@@ -13,17 +15,14 @@ import {
   Briefcase,
   Clock5,
   Folder,
-  Glasses,
   Home,
   Menu,
-  MessageSquare,
   Plus,
   PlusCircle,
   Search,
   ShieldCheck,
-  Users
+  Users,
 } from "lucide-react";
-import { GraphHelpers } from "next/dist/compiled/webpack/webpack";
 import Image from "next/image";
 
 interface MenuItemProps {
@@ -37,7 +36,8 @@ const MenuItem = ({ title, active }: MenuItemProps) => {
       className={cn(
         "font-bold border-b-4 border-black hover:border-white cursor-pointer py-2",
         active ? "border-white" : "border-transparent"
-      )}>
+      )}
+    >
       {title}
     </div>
   );
@@ -54,7 +54,8 @@ const FooterMenuCard = ({ Icon, active }: FooterMenuCardProps) => {
       className={cn(
         "p-2 border-t-4 border-transparent",
         active && " border-primary"
-      )}>
+      )}
+    >
       <Icon />
     </div>
   );
@@ -92,11 +93,12 @@ function Layout({ children }: { children: React.ReactNode }) {
         <div className="flex items-center space-x-5">
           <Bell size={24} />
           <Folder size={24} />
-          <MessageSquare size={24} />
+          <MessageCard />
           <div className="lg:flex items-center space-x-2 lg:space-x-5 hidden">
             <Button
               variant="outline"
-              className="border-red-500 text-pink-700 font-bold hover:text-pink-800">
+              className="border-red-500 text-pink-700 font-bold hover:text-pink-800"
+            >
               Quote
             </Button>
             <Button className="bg-pink-700 hover:bg-pink-800">
