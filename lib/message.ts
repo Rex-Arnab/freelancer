@@ -25,9 +25,7 @@ const UpdateMessage = async (id: string, msg: string) => {
 };
 
 const DeleteMessage = async (id: string) => {
-  const message = await getMessage(id);
-  if (!message) return null;
-  await message.delete();
+  const message = await Message.findByIdAndDelete(id);
   return message;
 };
 
