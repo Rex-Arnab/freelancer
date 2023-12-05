@@ -4,7 +4,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 function AvatarCard() {
   return (
     <Avatar>
-      <AvatarImage src="https://github.com/shadcn.png" />
+      <AvatarImage src="avatar.png" />
       <AvatarFallback>CN</AvatarFallback>
     </Avatar>
   );
