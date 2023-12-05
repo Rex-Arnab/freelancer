@@ -1,6 +1,6 @@
 import dbConnect from "@/lib/mongo";
 import {
-  NewMessage,
+  newMessage,
   listAllMessages,
   UpdateMessage,
   DeleteMessage,
@@ -12,7 +12,7 @@ export async function POST(req: any) {
 
   const body = await req.json();
   const { message } = body;
-  const new_message = await NewMessage(message);
+  const new_message = await newMessage(message);
 
   return NextResponse.json(new_message);
 }
